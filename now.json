@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "nplists3",
+  "alias": "nplist",
+  "builds": [
+    {
+      "src": "api/*.go",
+      "use": "@now/go"
+    },
+    {
+      "src": "index.html",
+      "use": "@now/html-minifier"
+    },
+    {
+      "src": "*.js",
+      "use": "@now/static"
+    },
+    {
+      "src": "*.css",
+      "use": "@now/static"
+    },
+    {
+      "src": "players.json",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "nplists2/api/list",
+      "dest": "nplists2/api/list.go",
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
+      }
+    },
+    {
+      "src": "/",
+      "dest": "index.html"
+    }
+  ]
+}
