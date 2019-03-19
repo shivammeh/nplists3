@@ -26,8 +26,8 @@
   ],
   "routes": [
     {
-      "src": "nplists2/api/list",
-      "dest": "nplists2/api/list.go",
+      "src": "/api/list",
+      "dest": "/api/list.go",
       "headers": {
         "Access-Control-Allow-Origin": "*"
       }
