@@ -25,7 +25,7 @@ function setTitle(data) {
     title = document.getElementById("title");
     table = document.getElementById('playerlist').getElementsByTagName('tbody')[0];
 
-    title.innerText = `[NoPixel] Current Players: ${data.currentPlayers} / 32 | Queue: ${data.currentQueue}`;
+    title.innerText = `[NoPixel Server 2] Current Players: ${data.currentPlayers} / 32 | Queue: ${data.currentQueue}`;
 }
 
 function createPlayersTable(data) {
