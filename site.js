@@ -25,13 +25,12 @@ function setTitle(data) {
     title = document.getElementById("title");
     table = document.getElementById('playerlist').getElementsByTagName('tbody')[0];
 
-    title.innerText = `[NoPixel Server 2] Current Players: ${data.currentPlayers} / 32 | Queue: ${data.currentQueue}`;
+    title.innerText = `[NoPixel Server] Current Players: ${data.currentPlayers} / 55 | Queue: ${data.currentQueue}`;
 }
 
 function createPlayersTable(data) {
     data.players = data.players.sort((a, b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0));
     data.players.forEach(function (player, i) {
-
         newRow = table.insertRow(table.rows.length);
         newCell = newRow.insertCell(0);
         newText = document.createTextNode(`${i+1}`)
