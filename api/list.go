@@ -47,7 +47,7 @@ type NoPixelPlayer struct {
 var (
 	jsonGet = &http.Client{Timeout: 10 * time.Second}
 	//ServerAddress to connect to
-	ServerAddress = "144.217.11.99:30120"
+	ServerAddress = "51.79.18.92:30120"
 	//ServerDetails struct to holds PlayerList & ServerDetails struct
 	ServerDetails = &ServerDetailsStruct{}
 	//NoPixelData struct
